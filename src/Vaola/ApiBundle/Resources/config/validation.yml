@@ -1,0 +1,19 @@
+Vaola\ApiBundle\Entity\Item:
+  properties:
+        name:
+            - NotBlank: ~
+            - NotNull: ~
+            - Length:
+                min: 2
+                max: 150
+                minMessage: "Your title must be at least {{ limit }} characters length"
+                maxMessage: "Your title name cannot be longer than {{ limit }} characters length"
+
+Vaola\ApiBundle\Entity\Cart:
+  properties:
+        customerId:
+            - NotBlank: ~
+            - NotNull: ~
+        itemId:
+            - NotBlank: ~
+            - NotNull: ~

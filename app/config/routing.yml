@@ -1,0 +1,14 @@
+vaola_api:
+    resource: "@VaolaApiBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+vaola_api_item:
+    type: rest
+    prefix: /items/
+    resource: "Vaola\ApiBundle\Controller\ItemController"
+
+vaola_api_cart:
+    type: rest
+    prefix: /cart/
+    resource: "Vaola\ApiBundle\Controller\CartController"
